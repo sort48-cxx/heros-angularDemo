@@ -28,16 +28,20 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## 小结
-#### 使用 CLI 创建了第二个组件 HeroesComponent。
+#### 添加了 Angular 路由器在各个不同组件之间导航。
 
-#### 英雄指南应用在一个主从视图中显示了英雄列表。
+#### 使用一些 <a> 链接和一个 <router-outlet> 把 AppComponent 转换成了一个导航用的壳组件。
 
-#### 用户可以选择一个英雄，并查看该英雄的详情。
+#### 在 AppRoutingModule 中配置了路由器。
 
-#### 使用 *ngFor 显示了一个列表。
+#### 定义了一些简单路由、一个重定向路由和一个参数化路由。
 
-#### 使用 *ngIf 来根据条件包含或排除了一段 HTML。
+#### 在 <a> 元素中使用了 routerLink 指令。
 
-#### 可以用 class 绑定来切换 CSS 的样式类。
+#### 把一个紧耦合的主从视图重构成了带路由的详情视图。
 
-#### 来源：https://www.angular.cn/tutorial/toh-pt2
+#### 使用路由链接参数来导航到所选英雄的详情视图。
+
+#### 在多个组件之间共享了 HeroService 服务。
+
+#### 来源：https://www.angular.cn/tutorial/toh-pt5
