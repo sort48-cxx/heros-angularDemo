@@ -1,8 +1,18 @@
-<p> {{hero.title |uppercase}} Detail</p>
-<p>{{hero.id}}-{{hero.title |uppercase}}</p>
+<h3>HeroList</h3>
 
-<div>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<h4>selectedHero.length---{{selectedHero}}</h4>
 
-  <label>编辑用户姓名：</label>
-  <input type="text" [(ngModel)]='hero.title' placeholder="set title "/>
+<div *ngIf="selectedHero">
+  <p>{{ selectedHero.name | uppercase }} Detail</p>
+  <p>{{ selectedHero.id }}-{{ selectedHero.name | uppercase }}</p>
+
+  <div>
+    <label>编辑用户姓名：</label>
+    <input type="text" [(ngModel)]="selectedHero.name" placeholder="set name " />
+  </div>
 </div>
