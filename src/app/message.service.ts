@@ -10,7 +10,6 @@ export class MessageService {
     console.log(message);
     this.messages.push(message);
   }
-  
   clear() {//清除log
     this.messages = [];
   }
