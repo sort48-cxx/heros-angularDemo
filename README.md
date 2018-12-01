@@ -28,16 +28,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## 小结
-#### 使用 CLI 创建了第二个组件 HeroesComponent。
+#### 把数据访问逻辑重构到了 HeroService 类中。
 
-#### 英雄指南应用在一个主从视图中显示了英雄列表。
+#### 在根注入器中把 HeroService 注册为该服务的提供商，以便在别处可以注入它。
 
-#### 用户可以选择一个英雄，并查看该英雄的详情。
+#### 使用 Angular 依赖注入机制把它注入到了组件中。
 
-#### 使用 *ngFor 显示了一个列表。
+#### 给 HeroService 中获取数据的方法提供了一个异步的函数签名。
 
-#### 使用 *ngIf 来根据条件包含或排除了一段 HTML。
+#### 发现了 Observable 以及 RxJS 库。
 
-#### 可以用 class 绑定来切换 CSS 的样式类。
+#### 使用 RxJS 的 of() 方法返回了一个模拟英雄数据的可观察对象 (Observable<Hero[]>)。
 
-#### 来源：https://www.angular.cn/tutorial/toh-pt2
+#### 在组件的 ngOnInit 生命周期钩子中调用 HeroService 方法，而不是构造函数中。
+
+#### 创建了一个 MessageService，以便在类之间实现松耦合通讯。
+
+#### HeroService 连同注入到它的服务 MessageService 一起，注入到了组件中。
+
+#### 来源：https://www.angular.cn/tutorial/toh-pt4
