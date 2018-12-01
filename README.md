@@ -28,16 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## 小结
-#### 使用 CLI 创建了第二个组件 HeroesComponent。
+#### 创建了一个独立的、可复用的 HeroDetailComponent 组件。
 
-#### 英雄指南应用在一个主从视图中显示了英雄列表。
+#### 用属性绑定语法来让父组件 HeroesComponent 可以控制子组件 HeroDetailComponent。
 
-#### 用户可以选择一个英雄，并查看该英雄的详情。
+#### 用 @Input 装饰器来让 hero 属性可以在外部的 HeroesComponent 中绑定。
 
-#### 使用 *ngFor 显示了一个列表。
-
-#### 使用 *ngIf 来根据条件包含或排除了一段 HTML。
-
-#### 可以用 class 绑定来切换 CSS 的样式类。
-
-#### 来源：https://www.angular.cn/tutorial/toh-pt2
+#### 来源：https://www.angular.cn/tutorial/toh-pt3
