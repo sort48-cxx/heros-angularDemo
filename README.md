@@ -30,16 +30,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## 小结
 #### 使用 CLI 创建了第二个组件 HeroesComponent。
 
-#### 把 HeroesComponent 添加到了壳组件 AppComponent 中，以便显示它。
+#### 英雄指南应用在一个主从视图中显示了英雄列表。
 
-#### 使用 UppercasePipe 来格式化英雄的名字。
+#### 用户可以选择一个英雄，并查看该英雄的详情。
 
-#### 用 ngModel 指令实现了双向数据绑定。
+#### 使用 *ngFor 显示了一个列表。
 
-#### 知道了 AppModule。
+#### 使用 *ngIf 来根据条件包含或排除了一段 HTML。
 
-#### 把 FormsModule 导入了 AppModule，以便 Angular 能识别并应用 ngModel 指令。
+#### 可以用 class 绑定来切换 CSS 的样式类。
 
-#### 知道了把组件声明到 AppModule 是很重要的，并认识到 CLI 会自动帮你声明它。
-
-#### 来源：https://www.angular.cn/tutorial/toh-pt1
+#### 来源：https://www.angular.cn/tutorial/toh-pt2
